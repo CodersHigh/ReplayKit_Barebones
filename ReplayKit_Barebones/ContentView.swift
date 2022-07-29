@@ -9,12 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isRecording: Bool = false
+    @State private var url: URL?
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             CircleView()
+            
+            // 녹화 버튼
             Button {
-                isRecording.toggle()
+                switch isRecording {
+                case true:
+                    // 녹화 중이라면, 멈추기
+                    self.url = stopRecording()
+                    isRecording = false
+                case false:
+                    // 녹화 중이 아니라면, 시작하기
+                    startRecording { error in
+                        if let error = error {
+                            print(error.localizedDescription)
+                            return
+                        }
+                        isRecording = true
+                    }
+                }
             } label: {
                 Image(systemName: isRecording ? "record.circle.fill" : "record.circle")
             }

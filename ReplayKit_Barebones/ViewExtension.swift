@@ -13,11 +13,21 @@ extension View {
     
     // 녹화 시작
     func startRecording(completion: @escaping (Error?) -> ()) {
-        
         let recorder = RPScreenRecorder.shared()
         recorder.isMicrophoneEnabled = false
         
         recorder.startRecording(handler: completion)
+    }
+    
+    // 녹화 중단
+    func stopRecording() -> URL {
+        let name = UUID().uuidString + ".mov"
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(name)
+        
+        let recorder = RPScreenRecorder.shared()
+        recorder.stopRecording(withOutput: url)
+        
+        return url
     }
 
 }
