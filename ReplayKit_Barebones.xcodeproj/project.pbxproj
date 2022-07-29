@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26F5093828937268003FE2BF /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F5093728937268003FE2BF /* ViewExtension.swift */; };
+		26F5093A289374E0003FE2BF /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F50939289374E0003FE2BF /* CircleView.swift */; };
 		26FB812D289366D90030001F /* ReplayKit_BarebonesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB812C289366D90030001F /* ReplayKit_BarebonesApp.swift */; };
 		26FB812F289366D90030001F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB812E289366D90030001F /* ContentView.swift */; };
 		26FB8131289366DA0030001F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26FB8130289366DA0030001F /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		26F5093728937268003FE2BF /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		26F50939289374E0003FE2BF /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		26FB8129289366D90030001F /* ReplayKit_Barebones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReplayKit_Barebones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FB812C289366D90030001F /* ReplayKit_BarebonesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayKit_BarebonesApp.swift; sourceTree = "<group>"; };
 		26FB812E289366D90030001F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				26FB812C289366D90030001F /* ReplayKit_BarebonesApp.swift */,
 				26FB812E289366D90030001F /* ContentView.swift */,
+				26F50939289374E0003FE2BF /* CircleView.swift */,
 				26FB8130289366DA0030001F /* Assets.xcassets */,
 				26FB8132289366DA0030001F /* Preview Content */,
 				26F5093728937268003FE2BF /* ViewExtension.swift */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F5093A289374E0003FE2BF /* CircleView.swift in Sources */,
 				26F5093828937268003FE2BF /* ViewExtension.swift in Sources */,
 				26FB812F289366D90030001F /* ContentView.swift in Sources */,
 				26FB812D289366D90030001F /* ReplayKit_BarebonesApp.swift in Sources */,
