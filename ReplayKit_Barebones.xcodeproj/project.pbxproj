@@ -38,6 +38,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26F5093D2893A6A4003FE2BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26FB812E289366D90030001F /* ContentView.swift */,
+				26F50939289374E0003FE2BF /* CircleView.swift */,
+				26F5093B28939CFA003FE2BF /* ShareSheet.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26F5093E2893A6BC003FE2BF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				26F5093728937268003FE2BF /* ViewExtension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		26FB8120289366D90030001F = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				26FB812C289366D90030001F /* ReplayKit_BarebonesApp.swift */,
-				26FB812E289366D90030001F /* ContentView.swift */,
-				26F50939289374E0003FE2BF /* CircleView.swift */,
+				26F5093E2893A6BC003FE2BF /* Helper */,
+				26F5093D2893A6A4003FE2BF /* View */,
 				26FB8130289366DA0030001F /* Assets.xcassets */,
 				26FB8132289366DA0030001F /* Preview Content */,
-				26F5093728937268003FE2BF /* ViewExtension.swift */,
-				26F5093B28939CFA003FE2BF /* ShareSheet.swift */,
 			);
 			path = ReplayKit_Barebones;
 			sourceTree = "<group>";
