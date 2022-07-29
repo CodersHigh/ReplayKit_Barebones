@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var isRecording: Bool = false
     @State private var url: URL?
+    @State private var shareVideo: Bool = false
     
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -22,6 +23,7 @@ struct ContentView: View {
                     // 녹화 중이라면, 멈추기
                     self.url = stopRecording()
                     isRecording = false
+                    shareVideo = true
                 case false:
                     // 녹화 중이 아니라면, 시작하기
                     startRecording { error in
@@ -36,8 +38,9 @@ struct ContentView: View {
                 Image(systemName: isRecording ? "record.circle.fill" : "record.circle")
             }
             .font(.largeTitle)
-            .foregroundColor(isRecording ? .red : .black)
+            .foregroundColor(isRecording ? .red :  .black)
             .padding()
+            .shareSheet(show: $shareVideo, items: [url])
         }
     }
 }

@@ -30,4 +30,16 @@ extension View {
         return url
     }
 
+    // 공유 시트
+    func shareSheet(show: Binding<Bool>, items: [Any?]) -> some View {
+        return self
+            .sheet(isPresented: show) {
+                let items = items.compactMap { item -> Any? in
+                    return item
+                }
+                if !items.isEmpty {
+                    ShareSheet(items: items)
+                }
+            }
+    }
 }
