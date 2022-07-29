@@ -13,12 +13,12 @@ https://user-images.githubusercontent.com/74223246/181688972-d36df5f5-a649-40d5-
 <br/>
 
 ### ReplayKit이란?     
-ReplayKit은 앱에서 **비디오 및 오디오를 녹화하거나 스트리밍**하며, 이를 공유할 수 있게 해주는 프레임워크입니다.
+ReplayKit은 앱에서 **비디오 및 오디오를 녹화하거나 스트리밍**하며, 이를 공유할 수 있게 해주는 프레임워크입니다.   
  
-<img width="600" alt="ReplayKitImage" src="https://user-images.githubusercontent.com/74223246/181689105-474cb628-3cff-4e07-966a-a96b68a6466c.pngg">
+<img width="600" alt="ReplayKitImage" src="https://user-images.githubusercontent.com/74223246/181689105-474cb628-3cff-4e07-966a-a96b68a6466c.png">
 
-프레임워크 특성 상, 게임에서 멋진 순간을 녹화하거나 게임 플레이 장면을 라이브로 스트리밍하는 등의 기능 구현에 활용되죠. 
-(그러나 해당 프로젝트는 앱 화면을 녹화해서 공유하는 간단한 기능만이 구현되어 있습니다.)
+프레임워크 특성 상, 게임에서 멋진 순간을 녹화하거나 게임 플레이 장면을 라이브로 스트리밍하는 등의 기능 구현에 활용되죠.    
+(그러나 해당 프로젝트는 앱 화면을 녹화해서 공유하는 간단한 기능만이 구현되어 있습니다.)    
 ReplayKit에 대해 더 궁금하다면 [Apple의 공식 문서](https://developer.apple.com/documentation/ReplayKit)를 참고해 보세요. 
 
 
